@@ -1,0 +1,304 @@
+:root {
+    --pertama: #071739;
+    --kedua: #4b6382;
+    --ketiga: #a4b5c4;
+    --keempat: #cdd5db;
+    --kelima: #a68868;
+    --keenam: #e3c39d;
+    --bg: #fff;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'poppins', 'sans-serif';
+    background-color: var(--keempat);
+    color: #4b6382;
+    min-height: 5000px;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7% ;
+    background-color: var(--keempat);
+    /* border-bottom: 1px solid  ; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--pertama);
+    font-style: italic;
+}
+.navbar .navbar-logo span {
+    color: var(--kedua);
+}
+.navbar .navbar-nav a {
+    color: #000;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin:  0.3rem;
+}
+.navbar .navbar-nav a:hover{
+    color: var(--ketiga);
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--keenam);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    color: #000;
+    margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+.navbar .navbar-extra a :hover{
+    color: var(--ketiga);
+}
+#hamburger-menu {
+    display: none;
+}
+
+/* navbar search form */
+.navbar .search-form{
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.navbar .search-form.active{
+    transform: scaleY(1);
+}
+.navbar .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--keempat);
+    padding: 1rem;
+}
+.navbar .search-form label{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color:#000 ;
+}
+/* hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/bumi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+}
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+.hero .content h1{
+    font-size: 5em;
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+.hero .content h1 span{
+    color: var(--kedua);
+}
+.hero .content p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 200;
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--kedua);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    cursor: pointer;
+}
+
+/* about section */
+.Peta, .Peta .row0, .Peta .row1, .Peta .row2, .Peta .row3, .Peta .row4, .Peta .row5, .Grafik .row0, .Grafik, .Grafik .row1, .Grafik .row2, .Grafik .row3, .Grafik .row4{
+    padding: 8rem 7% 1.4rem;
+}
+.Peta h2, .Grafik h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--pertama);
+}
+.Peta h2 span, .Grafik h2 span{
+    color: var(--kedua);
+}
+.Peta .row0,.Peta .row1, .Peta .row2, .Peta .row3, .Peta .row4, .Peta .row5, .Grafik .row0, .Grafik .row1, .Grafik .row2, .Grafik .row3, .Grafik .row4{
+    display: flex;
+}
+.Peta .row0 .about-img,.Peta .row1 .about-img, .Peta .row2 .about-img, .Peta .row3 .about-img, .Peta .row4 .about-img, .Peta .row5 .about-img, .Grafik .row0 .about-img, .Grafik .row1 .about-img, .Grafik .row2 .about-img, .Grafik .row3 .about-img, .Grafik .row4 .about-img {
+    flex: 1 1 45rem;
+}
+.Peta .row0 .about-img img,.Peta .row1 .about-img img, .Peta .row2 .about-img img, .Peta .row3 .about-img img, .Peta .row4 .about-img img, .Peta .row5 .about-img img, .Grafik .row0 .about-img img, .Grafik .row1 .about-img img, .Grafik .row2 .about-img img, .Grafik .row3 .about-img img, .Grafik .row4 .about-img img{
+    width: 100%;
+}
+.Peta .row0 .content, .Peta .row1 .content, .Peta .row2 .content, .Peta .row3 .content, .Peta .row4 .content, .Peta .row5 .content, .Grafik .row0 .content, .Grafik .row1 .content, .Grafik .row2 .content, .Grafik .row3 .content, .Grafik .row4 .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    color: #000;
+}
+.Peta .row0 .content h3, .Peta .row1 .content h3, .Peta .row2 .content h3, .Peta .row3 .content h3, .Peta .row4 .content h3, .Peta .row5 .content h3, .Grafik .row0 .content h3, .Grafik .row1 .content h3, .Grafik .row2 .content h3, .Grafik .row3 .content h3, .Grafik .row4 .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--pertama);
+}
+.Peta .row0 .content p, .Peta .row1 .content p, .Peta .row2 .content p, .Peta .row3 .content p, .Peta .row4 .content p, .Peta .row5 .content p, .Grafik .row0 .content p, .Grafik .row1 .content p, .Grafik .row2 .content p, .Grafik .row3 .content p, .Grafik .row4 .content p{
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+.Analisis{
+    padding: 8rem 7% 1.4rem;
+}
+.Analisis h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--pertama);
+}
+.Analisis h2 span{
+    color: var(--kedua);
+}
+.Analisis .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    color: #000;
+}
+.Analisis .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--pertama);
+}
+.Analisis .content p{
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+/* media queries */
+
+/* laptop */
+/* @media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+} */
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #000;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+    .navbar .navbar-nav a{
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after{
+        transform:scaleX(0.2)
+    }
+    .navbar .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .Peta .row0, .Peta .row1, .Peta .row2, .Peta .row3, .Peta .row4, .Peta .row5, .Grafik .row0, .Grafik .row1, .Grafik .row2, .Grafik .row3, .Grafik .row4 {
+        flex-wrap: wrap;
+    }
+    .Peta .row0 .Peta-img img, .Peta .row1 .Peta-img img, .Peta .row2 .Peta-img img, .Peta .row3 .Peta-img img, .Peta .row4 .Peta-img img, .Peta .row5 .Peta-img img, .Grafik .row0 .Peta-img img, .Grafik .row1 .Peta-img img, .Grafik .row2 .Peta-img img, .Grafik .row3 .Peta-img img, .Grafik .row4 .Peta-img img{
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Peta .row0 .content, .Peta .row1 .content, .Peta .row2 .content, .Peta .row3 .content, .Peta .row4 .content, .Peta .row5 .content, .Grafik .row0 .content, .Grafik .row1 .content, .Grafik .row2 .content, .Grafik .row3 .content, .Grafik .row4 .content{
+        padding: 0;
+    }
+    .Peta .row0 .content  h3, .Peta .row1 .content  h3, .Peta .row2 .content  h3, .Peta .row3 .content  h3, .Peta .row4 .content  h3, .Peta .row5 .content  h3, .Grafik .row0 .content  h3, .Grafik .row1 .content  h3, .Grafik .row2 .content  h3, .Grafik .row3 .content  h3, .Grafik .row4 .content  h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .Peta .row0 .content p, .Peta .row1 .content p, .Peta .row2 .content p, .Peta .row3 .content p, .Peta .row4 .content p, .Peta .row5 .content p, .Grafik .row0 .content p, .Grafik .row1 .content p, .Grafik .row2 .content p, .Grafik .row3 .content p, .Grafik .row4 .content p{
+        font-size: 1.6rem;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}

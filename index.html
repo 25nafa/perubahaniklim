@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Perubahan Iklim</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <!-- Navbar starts -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">IKLIM <span>KINI</span></a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#Peta">Peta </a>
+            <a href="#Grafik">Grafik</a>
+            <a href="#Analisis">Analisis</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search-button" ><i data-feather="search"></i></a>
+            <a href="#" id="hamburger-menu" ><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- search form start -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- search form end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!--Hero section start  -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Pantau Perubahan Iklim  <span>global</span></h1>
+            <p>"Temukan data, peta interaktif, dan analisis terkini tentang perubahan iklim di seluruh dunia."</p>
+            <a href="#" class="cta">Pelajari Lebih Lanjut</a>
+        </main>
+    </section>
+    <!-- Hero section end -->
+    
+    <!-- about section start-->
+    <section id="Peta" class="Peta">
+        <h2><span>Peta </span>kami</h2>
+        <div class="row0">
+            <div class="about-img">
+                <img src="img/Daily Surface Air Temperature.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Peta Suhu Udara Permukaan Harian</h3>
+                <p>ini menyediakan visualisasi suhu udara permukaan harian dari ECMWF Reanalysis versi 5 (ERA5) sejak Januari 1940. Data ini memungkinkan eksplorasi perubahan suhu akibat cuaca dan konteks iklim jangka panjang.</p>
+                <p>Pengguna diingatkan bahwa data ini hanya untuk analisis umum dan perlu diverifikasi dengan data stasiun cuaca. Peta suhu global dan grafik anomali suhu diperbarui harian dengan jeda 6–7 hari.</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="about-img">
+                <img src="img/sst_world-wt3_2024_d235.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Peta Suhu Permukaan Laut Harian </h3>
+                <p>Halaman ini menyediakan visualisasi suhu permukaan laut harian dari dataset OISST versi 2.1, yang menggabungkan data satelit, kapal, dan pelampung.</p>
+                <p>Data OISST mencakup suhu dari 1 September 1981 hingga sekarang. Peta dan grafik anomali suhu diperbarui harian dengan jeda 1-2 hari.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="about-img">
+                <img src="img/seaice_arc-lea3_2024_d236.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Peta Luas Es Laut Harian </h3>
+                <p>Halaman ini menampilkan data luas es laut harian dari belahan bumi utara dan selatan sejak 1978, berdasarkan data satelit.</p>
+                <p>Data diperbarui harian dengan jeda satu hari. Peta konsentrasi es laut menggunakan bidang analisis 0,5°x0,5° dari NCEP.</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="about-img">
+                <img src="img/sstanom_world-wt3_2024_d214.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah animasi peta harian </h3>
+                <p>Halaman ini menampilkan peta animasi suhu udara 2 meter, suhu permukaan laut (SST), dan konsentrasi es laut berdasarkan data iklim.</p>
+                <p>Peta diperbarui setiap hari dengan jeda satu hari, dihasilkan menggunakan NCEP Climate Forecast System dan NOAA OISST.</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="about-img">
+                <img src="img/Monthly U.S. Temperature & Precipitation.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Peta Suhu & Curah Hujan AS Bulanan </h3>
+                <p>Data Source: NOAA Climate Divisional Database (timeseries) and Monthly U.S. Climate Gridded Dataset (maps)</p>
+                
+            </div>
+        </div>
+        <div class="row5">
+            <div class="about-img">
+                <img src="img/oisst2.1_world-wt3_sstanom_2023-07.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Peta Suhu Permukaan Laut Bulanan </h3>
+                <p>Halaman ini menyediakan visualisasi deret waktu dan peta suhu permukaan laut (SST) bulanan dari NOAA OISST. Dataset ini menggabungkan observasi satelit, kapal, dan buoy sejak September 1981.</p>
+                <p>Peta dan grafik SST serta anomali suhu dapat disesuaikan berdasarkan wilayah. Data diproses menggunakan NCAR Command Language dan grafik interaktif dibuat dengan HighCharts.</p>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- grafik section start-->
+    <section id="Grafik" class="Grafik">
+        <h2><span>Grafik </span>kami</h2>
+    
+        <div class="row0">
+            <div class="about-img">
+                <img src="img/Data Suhu Udara Permukaan Harian.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Grafik Suhu Udara Permukaan Harian </h3>
+                <p>ini menyediakan visualisasi suhu udara permukaan harian dari ECMWF Reanalysis versi 5 (ERA5) sejak Januari 1940. Data ini memungkinkan eksplorasi perubahan suhu akibat cuaca dan konteks iklim jangka panjang.</p>
+                <p>Pengguna diingatkan bahwa data ini hanya untuk analisis umum dan perlu diverifikasi dengan data stasiun cuaca. Peta suhu global dan grafik anomali suhu diperbarui harian dengan jeda 6–7 hari.</p>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="about-img">
+                <img src="img/Grafik Suhu Permukaan Laut Harian.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Grafik Suhu Permukaan Laut Harian</h3>
+                <p>Halaman ini menyediakan visualisasi suhu permukaan laut harian dari dataset OISST versi 2.1, yang menggabungkan data satelit, kapal, dan pelampung.</p>
+                <p>Data OISST mencakup suhu dari 1 September 1981 hingga sekarang. Peta dan grafik anomali suhu diperbarui harian dengan jeda 1-2 hari.</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="about-img">
+                <img src="img/Grafik luas es laut harian.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Grafik Luas Es Laut Harian</h3>
+                <p>Halaman ini menampilkan data luas es laut harian dari belahan bumi utara dan selatan sejak 1978, berdasarkan data satelit.</p>
+                <p>Data diperbarui harian dengan jeda satu hari. Peta konsentrasi es laut menggunakan bidang analisis 0,5°x0,5° dari NCEP.</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="about-img">
+                <img src="img/Grafik Suhu & Curah Hujan AS Bulanan.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Grafik Suhu & Curah Hujan AS Bulanan</h3>
+                <p>Data Source: NOAA Climate Divisional Database (timeseries) and Monthly U.S. Climate Gridded Dataset (maps)</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="about-img">
+                <img src="img/Grafik Peta Suhu Permukaan Laut Bulanan.png" alt="Peta">
+            </div>
+            <div class="content">
+                <h3>Ini adalah Grafik Suhu Permukaan Laut Bulanan</h3>
+                <p>Halaman ini menyediakan visualisasi deret waktu dan peta suhu permukaan laut (SST) bulanan dari NOAA OISST. Dataset ini menggabungkan observasi satelit, kapal, dan buoy sejak September 1981.</p>
+                <p>Peta dan grafik SST serta anomali suhu dapat disesuaikan berdasarkan wilayah. Data diproses menggunakan NCAR Command Language dan grafik interaktif dibuat dengan HighCharts.</p>
+            </div>
+        </div>
+    </section>
+    <!-- grafik section end -->
+
+    <!-- analisis section start-->
+    <section id="Analisis" class="Analisis">
+        <h2><span>Analisis </span>kami</h2>
+        <div class="content">
+            <h3>Ini adalah Analisis tentang Perubahan Iklim Di Seluruh Dunia  </h3>
+            <p>Perubahan iklim global semakin menjadi perhatian utama, ditandai dengan peningkatan suhu rata-rata bumi, mencairnya es di kutub, dan pergeseran pola cuaca. Fenomena ini memicu lebih banyak peristiwa cuaca ekstrem seperti badai, kekeringan, dan banjir, yang semakin sering terjadi di berbagai belahan dunia.</p>
+            <p>Dampak dari perubahan iklim sangat luas, mempengaruhi ekosistem, kehidupan manusia, dan ekonomi global. Negara-negara dengan sumber daya terbatas paling rentan terhadap perubahan ini, sementara usaha global untuk mengurangi emisi gas rumah kaca dan adaptasi terhadap perubahan iklim menjadi semakin mendesak.</p>
+        </div>
+    </section>
+    <!-- analisis section end -->
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+      </script>
+
+    <!-- My Javascript -->
+     <script src="js/script.js"></script>
+
+</body>
+</html>
